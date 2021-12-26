@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;      
+}
+body{
+    position: relative; 
+    background-color: rgb(17, 2, 2);
+    background: url(../img/001.jpg);
+    background-position: bottom;
+}
+.p1 a{  /*去掉下划线*/
+    text-decoration: none;  
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    /* 设置字体大小 */
+    font-size: 44px;
+    background: linear-gradient(90deg,#ffeb3b,#03a9f4,#f441a5,#ffeb3b);
+    background-size: 400%;
+    width: 300px;
+    height: 300px;
+    line-height: 300px;
+    text-align: center;
+    color: rgb(17, 2, 2);
+    /* 字母变大写 */
+    text-transform: uppercase;
+    /* 设置成胶囊状 */
+    border-radius: 150px;
+    z-index: 1;
+    font-family: 华文行楷;
+}
+.p2 a{  /*去掉下划线*/
+    text-decoration: none;  
+    position: absolute;
+    left: 20%;
+    top: 24%;
+    transform: translate(-50%,-50%);
+    /* 设置字体大小 */
+    font-size: 44px;
+    background: linear-gradient(90deg,#f4036f,#ffeb3b,#f441a5,#03a9f4);
+    background-size: 400%;
+    width: 350px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    color: rgb(17, 2, 2);
+    /* 字母变大写 */
+    text-transform: uppercase;
+    /* 设置成胶囊状 */
+    border-radius: 50px;
+    z-index: 1;
+    font-family: 华文新魏;
+}
+.p3 a{  /*去掉下划线*/
+    text-decoration: none;  
+    position: absolute;
+    left: 20%;
+    top: 76%;
+    transform: translate(-50%,-50%);
+    /* 设置字体大小 */
+    font-size: 44px;
+    background: linear-gradient(90deg,yellow,#f441a5,#ffeb3b,#03a9f4,purple);
+    background-size: 400%;
+    width: 350px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    color: rgb(17, 2, 2);
+    /* 字母变大写 */
+    text-transform: uppercase;
+    /* 设置成胶囊状 */
+    border-radius: 50px;
+    z-index: 1;
+    font-family: 华文新魏;
+}
+.p4 a{  /*去掉下划线*/
+    text-decoration: none;  
+    position: absolute;
+    left: 80%;
+    top: 76%;
+    transform: translate(-50%,-50%);
+    /* 设置字体大小 */
+    font-size: 44px;
+    background: linear-gradient(90deg,#03a9f4,purple,#f441a5,#ffeb3b,#03a9f4);
+    background-size: 400%;
+    width: 350px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    color: rgb(17, 2, 2);
+    /* 字母变大写 */
+    text-transform: uppercase;
+    /* 设置成胶囊状 */
+    border-radius: 50px;
+    z-index: 1;
+    font-family: 华文新魏;
+}
+.p5 a{  /*去掉下划线*/
+    text-decoration: none;  
+    position: absolute;
+    left: 80%;
+    top: 24%;
+    transform: translate(-50%,-50%);
+    /* 设置字体大小 */
+    font-size: 44px;
+    background: linear-gradient(90deg,#f441a5,#ffeb3b,#03a9f4,#03a9f4,purple);
+    background-size: 400%;
+    width: 350px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    color: rgb(17, 2, 2);
+    /* 字母变大写 */
+    text-transform: uppercase;
+    /* 设置成胶囊状 */
+    border-radius: 50px;
+    z-index: 1;
+    font-family: 华文新魏;
+}
+/* 设置发光 */
+a::before{
+    content: "";
+    position: absolute;
+    left: -5px;
+    right: -5px;
+    top: -5px;
+    bottom: -5px;
+    background: linear-gradient(90deg,#ffeb3b,#03a9f4,#f441a5,#03a9f4);
+    background-size: 400%;
+    border-radius: 50px;
+    filter: blur(20px);
+    z-index: -1;
+}
+.p1 a::before{
+    content: "";
+    position: absolute;
+    left: -5px;
+    right: -5px;
+    top: -5px;
+    bottom: -5px;
+    background: linear-gradient(90deg,purple,#ffeb3b,#f441a5,#03a9f4);
+    background-size: 400%;
+    border-radius: 50px;
+    filter: blur(20px);
+    z-index: -1;
+}
+a:hover::before{
+    animation: sun 10s infinite;
+}
+a:hover{
+    animation: sun 10s infinite;
+}
+/* 设置流光 */
+@keyframes sun{
+    100%{
+        background-position: -400% 0;
+    }
+}
+
+.mydiv{
+    background-color:'#fff';
+    border:10px solid green;
+    position: relative;
+    width: 98.7%;
+    height: 750px;
+}
+
+.img {width: 20px;height: 20px;opacity: 1;position: absolute;z-index: 100000;transition: 2s;}
+.left,.right {width: 10px;height: 10px;border-radius: 100%;position: absolute;}
+.right {right: 0;}
+.under {width: 10px;height: 10px;position: absolute;top: 5px;left: 5px;transform: rotate(45deg)}
+.text {width: 50px;font-size: 10px;line-height: 1;position: absolute;top: -1em;left: -15px;text-align: center;}
+

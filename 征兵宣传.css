@@ -1,0 +1,125 @@
+body{
+    margin:0;
+    padding:0;
+    font-family:"montserrat";
+    background-image: linear-gradient(135deg,#2c3e50,#27ae60,#e74c3c,#be44ad);
+    background-size:100%;
+    animation:bganimation 15s infinite;
+}
+.text{
+    color:white;
+    text-align:center;
+    text-transform:uppercase;
+    margin:350px 0;
+    font-size:30px;
+}
+@keyframes bganimation{
+    0%{
+        background-position:0% 50%;
+    }
+    50%{
+        background-position:100% 50%;
+    }
+
+100%{
+        background-position:0% 50%;
+    }
+}
+h2{
+    text-align: left;
+    padding-left: 390px;
+    font-family: 华文新魏;
+    font-size: 50px;
+    color:rgb(8, 15, 11);
+    position:absolute;
+}
+head{
+    height: 30px;
+    width:inherit;
+    background-color: silver;
+    color: white; 
+}
+.main{
+    margin:18px auto ;
+    width: 1500px;
+    height: 850px;
+}
+.c1{
+    width: 100%;
+    margin: 0;
+    height: 100px;
+    padding-left: 0px;
+}
+#d1{
+    width:45%;
+    float: left;
+    margin-left: 50px;
+    position: absolute;
+}
+#d2{
+    width: 50%;
+    float: right;
+}
+#logo1{
+    top: -12px;
+    left: 130px;
+    position: relative;
+    padding-right: 30px;
+}
+#logo2{
+    top: -190px;
+    left: 1300px;
+    position: relative;
+    padding-right: 30px;
+}
+* {
+    margin: 0;
+    padding: 0
+}
+ul {
+    list-style: none
+}
+img {
+    vertical-align: top
+}
+.box {
+    width: 600px;
+    height: 600px;
+    margin: 100px auto;
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+.inner {
+    width: 600px;
+    height: 600px;
+    background-color: pink;
+    overflow: hidden;
+    position: relative;
+}
+.inner ul {
+    width: 1000%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.inner li {
+    float: left;
+}
+.square {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+.square span {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-color: #fff;
+    text-align: center;
+    line-height: 16px;
+    cursor: pointer;
+}
+.square span.current {
+    background-color: orangered;
+    color: #fff;
+}
