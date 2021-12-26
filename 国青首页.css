@@ -5,7 +5,7 @@
 body{
     position: relative; 
     background-color: rgb(17, 2, 2);
-    background: url(../img/001.jpg);
+    background: url(img/001.jpg);
     background-position: bottom;
 }
 .p1 a{  /*去掉下划线*/
