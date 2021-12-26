@@ -1,5 +1,5 @@
 body{
-    background-image: url(../img/fc18a85f-5752-456b-b4cf-d52ae475e582.jpg);
+    background-image: url(img/fc18a85f-5752-456b-b4cf-d52ae475e582.jpg);
     background-repeat:repeat;
     background-position: bottom;
 }    
@@ -63,7 +63,7 @@ h2{
     padding-right: 30px;
 }
 .tb1{
-    border:2px solid yellowgreen;border-collapse: collapse;background:url(../img/log3.jpg);background-size: 700px 700px;
+    border:2px solid yellowgreen;border-collapse: collapse;background:url(img/log3.jpg);background-size: 700px 700px;
 }
 #t1{width: 20%;height: auto; border:2px solid yellowgreen;text-align: center;font-family:楷体;font-weight: bold;color: rgb(255, 123, 0);font-size: 17px;}
 #t2{width: 30%;height: auto; border:2px solid yellowgreen;text-align: center;font-family:楷体;font-weight: bold;color: rgb(255, 123, 0);font-size: 17px;}
